@@ -1,0 +1,53 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<head>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Simple.Search</title>
+</head>
+
+<html>
+  <body>
+     <table class="menu">
+            <tr>
+                <th class="drop_menu_parent" tab-index="0"></th>
+                <th><a href="http://127.0.0.1:8000/">Simple Search</a></th>
+                <th><a href="indexURL.html">Index URL</a></th>
+                <th><a href="#">Known URL</a></th>
+                <th><a href="indexWords.html">Indexes</a></th>
+            </tr>
+     </table>
+
+
+    <h1 align="center">Simple Search </h1>
+    <h3 align="center">Nothing but search</h3>
+
+
+    <form method="post" action="/search">
+      <input type="text" name="input_field" placeholder="What would you like to find?">
+      <input type="submit" class="btn btn-success" value="Search">{% csrf_token %}
+    </form>
+
+
+    <ul class="results">
+      {% if results %}
+
+        <div id="result_text">Results:</div><br>
+          {% for link, t, cont in results%}
+                    <li>
+                       <a href="{{ link }}">
+                           <div class="outp"> {{t}} </div>
+                             <a href="{{ link }}">{{ link }}</a> <br><br>
+                           <div class="cont">{{cont}}</div></a>
+
+
+                    </li>
+          {% endfor %}
+
+
+      {% endif%}
+    </ul>
+
+  </body>
+</html>

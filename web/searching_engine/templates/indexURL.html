@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <title>Simple.Search</title>
+  </head>
+
+  <body>
+     <table class="menu">
+              <tr>
+                <th class="drop_menu_parent" tab-index="0"></th>
+                <th><a href="http://127.0.0.1:8000/">Simple Search</a></th>
+                <th><a href="indexURL.html">Index URL</a></th>
+                <th><a href="#">Known URL</a></th>
+                <th><a href="indexWords.html">Indexes</a></th>
+            </tr>
+     </table>
+
+    <h1 align="center">Simple Search</h1>
+    <h3 align="center">Nothing but search</h3>
+
+    <div class="raw">
+      <form method="post" action="">
+        <input type="text" name="input_field" placeholder="What site would you like to index?">
+        <input type="submit" class="btn btn-success" value="Index">{%csrf_token%}
+      </form>
+    </div>
+
+  </body>
+</html>

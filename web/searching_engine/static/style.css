@@ -1,0 +1,124 @@
+body{
+background-image: url("bg2.jpg");
+background-size: 100%;
+
+}
+
+h1{
+color: white;
+font-size: 333%;
+}
+
+h3{
+color: white;
+font-size: 130%;}
+
+.menu{
+    background-color: rgba(1, 6, 41, 0.3);
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+	font-size: 150%;
+}
+
+input[type=submit] {
+	  width: 150px;
+    background-color:rgba(1, 6, 41, 0.7);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+
+	font-size: 150%;
+}
+
+input[type=submit]:hover {
+    background-color: #010f7a;
+}
+
+input[type=text], select {
+    width: 600px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	font-size: 150%;
+
+}
+
+form{
+text-align: center;
+}
+
+a:link {
+	color: white;
+    text-decoration: none;
+}
+
+a:visited {
+	color: white;
+    text-decoration: none;
+}
+
+a:hover {
+	color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+.results {
+    list-style: none;
+     padding: 0;
+     margin: 0;
+
+}
+.results li {
+    margin-bottom: 1.5em;
+    border: 3px solid #CADFCF;
+    padding: 17px;
+    border-radius: 30px;
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans";
+    border: none;
+
+
+    background-color: rgba(1, 6, 41, 0.9);
+
+}
+
+.results li:hover {
+    margin-bottom: 1.5em;
+    border: 3px solid #CADFCF;
+    padding: 17px;
+    border-radius: 30px;
+    color: white;
+
+    border: none;
+    background-color: rgba(1, 6, 41, 0.6);
+    -webkit-box-shadow:0 0 30px #555;
+}
+
+
+
+.outp{
+   font-size: 160%;
+   text-decoration-line: underline;
+}
+
+#result_text{
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Sans";
+    font-size: 240%;
+}
+
+.cont{
+    font-style: italic;
+}
+
